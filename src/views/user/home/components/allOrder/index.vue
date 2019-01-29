@@ -1,15 +1,12 @@
 <template>
-    <div>
-      <h1>首页</h1>
-    </div>
+  <div>
+    <h1>所有订单</h1>
+  </div>
 </template>
 
 <script>
-
 export default {
   name: '',
-  components: {
-  },
   data () {
     return {}
   },
