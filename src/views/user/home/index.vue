@@ -1,8 +1,8 @@
 <template>
     <div class="userHome">
-      <div class="lh68 b-orange">
+      <div class="padding-t-b-20 lh68 b-orange">
         <div class="w-1200 top">
-          <el-row>
+          <el-row class="font-size18">
             <el-col :span="3">
               <span>我的购购个人中心</span>
             </el-col>

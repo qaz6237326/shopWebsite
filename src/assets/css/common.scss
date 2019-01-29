@@ -1,5 +1,12 @@
 $width1200: 1200px;
 
+/* font */
+.font-size18 {
+  span {
+    font-size: 18px;
+  }
+}
+
 .lh68 {
   line-height: 68px;
 }
@@ -17,6 +24,9 @@ $width1200: 1200px;
 }
 .padding-t-b-30 {
   padding: 30px 0;
+}
+.padding-t-b-20 {
+  padding: 20px 0;
 }
 .padding-l-r-35 {
   padding: 0 35px;
