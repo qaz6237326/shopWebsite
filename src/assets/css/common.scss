@@ -10,6 +10,27 @@ $width1200: 1200px;
 .min-1200 {
   min-width: $width1200;
 }
+
+/* padding */
+.padding-t-b-15 {
+  padding: 15px 0;
+}
+.padding-t-b-30 {
+  padding: 30px 0;
+}
+.padding-l-r-35 {
+  padding: 0 35px;
+}
+
+/* margin */
+.margin-b-20 {
+  margin-bottom: 20px;
+}
+.margin-t-b-20 {
+  margin: 20px 0;
+}
+
+/* align */
 .text-center {
   text-align: center;
 }

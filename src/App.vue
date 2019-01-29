@@ -1,6 +1,6 @@
 <template>
   <div id="app" class="min-1200">
-    <div class="w-1200">
+    <div class="b-b8">
       <top></top>
     </div>
     <router-view/>

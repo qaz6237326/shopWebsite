@@ -1,12 +1,16 @@
 <template>
   <div>
-    <h1>所有订单</h1>
+    <commodityTable></commodityTable>
   </div>
 </template>
 
 <script>
+import commodityTable from '../../components/commodityTable/index.vue'
 export default {
   name: '',
+  components: {
+    commodityTable
+  },
   data () {
     return {}
   },
