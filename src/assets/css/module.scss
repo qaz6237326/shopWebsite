@@ -6,13 +6,24 @@
   }
 }
 
+/* table */
+.e8-b {
+  background: #e8e8e8;
+  padding: 8px 0;
+}
+.c-table {
+  border: 1px solid rgba(175,196,220,1);
+  .td-center td {
+    text-align: center;
+  }
+}
 
 .userHome {
   .top span{
     color: white;
   }
 }
-.navText {
+.navText_line {
   position: relative;
   text-decoration: none;
   &:before {

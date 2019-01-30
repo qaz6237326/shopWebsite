@@ -7,15 +7,21 @@ $width1200: 1200px;
   }
 }
 
-.lh68 {
-  line-height: 68px;
-}
+
 .w-1200 {
   width: $width1200;
   margin: 0 auto;
 }
 .min-1200 {
   min-width: $width1200;
+}
+
+/* line-height */
+.lh32 {
+  line-height: 32px;
+}
+.lh68 {
+  line-height: 68px;
 }
 
 /* padding */
@@ -31,6 +37,9 @@ $width1200: 1200px;
 .padding-l-r-35 {
   padding: 0 35px;
 }
+.padding20-35 {
+  padding: 20px 35px;
+}
 
 /* margin */
 .margin-b-20 {
@@ -43,4 +52,7 @@ $width1200: 1200px;
 /* align */
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
 }

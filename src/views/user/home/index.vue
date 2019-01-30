@@ -21,10 +21,11 @@
         </div>
       </div>
       <div class="w-1200 padding-t-b-30">
-        <div class="margin-b-20">
-          <router-link class="navText padding-l-r-35" v-for="(item, index) in orderList" :key="index" :to="currentPage + '/' + item.path">
+        <div class="" style="border-bottom: 2px solid #ddd;overflow:hidden;zoom:1;">
+          <div class="padding20-35" style="float:left;cursor: pointer;"
+               v-for="(item, index) in orderList" :key="index" @click="$router.push(currentPage + '/' + item.path)">
             {{item.name}}
-          </router-link>
+          </div>
         </div>
         <div>
           <router-view></router-view>
