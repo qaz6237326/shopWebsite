@@ -1,3 +1,5 @@
+@import "color";
+
 $width1200: 1200px;
 
 /* font */
@@ -6,7 +8,10 @@ $width1200: 1200px;
     font-size: 18px;
   }
 }
-
+.fontStrong {
+  font-size: 14px;
+  font-weight: bolder;
+}
 
 .w-1200 {
   width: $width1200;
@@ -40,6 +45,12 @@ $width1200: 1200px;
 .padding20-35 {
   padding: 20px 35px;
 }
+.padding20-25 {
+  padding: 20px 25px;
+}
+.padding26 {
+  padding: 26px;
+}
 
 /* margin */
 .margin-b-20 {
@@ -48,7 +59,33 @@ $width1200: 1200px;
 .margin-t-b-20 {
   margin: 20px 0;
 }
+.margin-t-b-10 {
+  margin: 10px 0;
+}
+.margin-t-b-5 {
+  margin: 5px 0;
+}
+.margin-l-r-15 {
+  margin: 0 15px;
+}
+.margin-l-r-5 {
+  margin: 0 5px;
+}
+.div-margin-t-b-10 {
+  div {
+    margin:10px 0;
+  }
+}
+.div-margin-t-b-5 {
+  div {
+    margin:5px 0;
+  }
+}
 
+/* border */
+.active-b {
+  border-bottom: $b-2r
+}
 /* align */
 .text-center {
   text-align: center;

@@ -1,6 +1,6 @@
 <template>
     <div class="userHome">
-      <div class="padding-t-b-20 lh68 b-orange">
+      <div class="lh68 b-orange">
         <div class="w-1200 top">
           <el-row class="font-size18">
             <el-col :span="3">
@@ -20,10 +20,10 @@
           </el-row>
         </div>
       </div>
-      <div class="w-1200 padding-t-b-30">
+      <div class="w-1200">
         <div class="" style="border-bottom: 2px solid #ddd;overflow:hidden;zoom:1;">
-          <div class="padding20-35" style="float:left;cursor: pointer;"
-               v-for="(item, index) in orderList" :key="index" @click="$router.push(currentPage + '/' + item.path)">
+          <div class="padding20-35" :class="$route.path == (currentPage + '/' + item.path) ? 'active-b' : ''" style="float:left;cursor: pointer;"
+               v-for="(item, index) in orderList" :key="index" @click="jump(item.path)">
             {{item.name}}
           </div>
         </div>
@@ -50,8 +50,13 @@ export default {
     }
   },
   created () {
+    console.log(this.$route.path)
   },
-  methods: {},
+  methods: {
+    jump (path) {
+      this.$router.push(this.currentPage + '/' + path)
+    }
+  },
   mounted () {
   }
 }

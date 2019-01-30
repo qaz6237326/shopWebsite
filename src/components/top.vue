@@ -25,7 +25,7 @@
             </el-dropdown>
             <router-link to="/favorites">收藏夹</router-link>
             <router-link to="/shopCar">购物车</router-link>
-            <router-link to="/userHome">个人中心</router-link>
+            <router-link to="/userHome/allOrder">个人中心</router-link>
             <router-link to="/sellerCenter">卖家中心</router-link>
             <router-link to="/customerService">联系客服</router-link>
           </div>

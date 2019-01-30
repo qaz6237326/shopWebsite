@@ -6,7 +6,10 @@
 * {
   padding: 0;
   margin: 0;
-  font: 12px Microsoft YaHei;
+  // font: 12px Microsoft YaHei;
+}
+body {
+  font: 12px/1.5 tahoma,arial,Hiragino Sans GB,\\5B8B体,sans-serif
 }
 a {text-decoration: none;color: $link-color;}
 a:visited{text-decoration:none;color: $link-color;}
