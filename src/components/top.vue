@@ -15,7 +15,7 @@
           <div class="top-right-nav">
             <router-link to="/login">登录</router-link>
             <el-dropdown>
-              <span class="el-dropdown-link">
+              <span class="el-dropdown-link" style="font-size: 12px;">
                   我的购购<i class="el-icon-arrow-down el-icon-right"></i>
               </span>
               <el-dropdown-menu slot="dropdown">

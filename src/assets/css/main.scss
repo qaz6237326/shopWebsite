@@ -14,3 +14,6 @@ body {
 a {text-decoration: none;color: $link-color;}
 a:visited{text-decoration:none;color: $link-color;}
 a:active{color: $link-color;}
+a:hover {
+  color: red;
+}

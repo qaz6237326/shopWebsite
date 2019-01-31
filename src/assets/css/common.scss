@@ -12,6 +12,13 @@ $width1200: 1200px;
   font-size: 14px;
   font-weight: bolder;
 }
+// 需要设置 width
+.text-overflow{
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow: ellipsis;
+}
+
 
 .w-1200 {
   width: $width1200;
