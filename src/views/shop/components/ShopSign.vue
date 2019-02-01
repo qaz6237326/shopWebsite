@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <div style="height:150px;background: #ddd;">
 
     </div>
 </template>
 
 <script>
 export default {
-  name: '',
+  name: 'sign',
   data () {
     return {}
   },

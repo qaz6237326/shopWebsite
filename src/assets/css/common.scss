@@ -58,6 +58,10 @@ $width1200: 1200px;
 .padding26 {
   padding: 26px;
 }
+.pt10 {
+  padding-top: 10px;
+}
+
 
 /* margin */
 .mt20 {
@@ -82,6 +86,13 @@ $width1200: 1200px;
 .margin-l-r-5 {
   margin: 0 5px;
 }
+.mfr10 {
+  margin:0 10px;
+}
+.ml25 {
+  margin-left:25px;
+}
+
 .div-margin-t-b-10 {
   div {
     margin:10px 0;
@@ -97,6 +108,19 @@ $width1200: 1200px;
 .active-b {
   border-bottom: $b-2r
 }
+.c-t-nav {
+  .line-l {
+    border-left: 1px solid #e8e8e8;
+  }
+  .line-r {
+    border-right: 1px solid #e8e8e8;
+  }
+  .item {
+    padding: 0 10px;
+  }
+}
+
+
 /* align */
 .text-center {
   text-align: center;

@@ -8,7 +8,7 @@
         </el-col>
         <el-col :span="8">
           <el-input v-model="query">
-            <el-button slot="append">搜索</el-button>
+            <el-button slot="append" @click="$router.push('/shop')">搜索</el-button>
           </el-input>
         </el-col>
         <el-col :span="13">
