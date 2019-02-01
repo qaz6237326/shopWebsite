@@ -1,8 +1,8 @@
 <template>
     <div>
-      <h1>登录页</h1>
-      <el-form>
-      </el-form>
+      <el-table>
+
+      </el-table>
     </div>
 </template>
 

@@ -5,6 +5,12 @@ $c-table-true-head: rgba(245,245,245,1);
 $c-table-true-border:1px solid rgba(230,230,230,0.5);
 $c-table-true-hover-border:1px solid rgba(230,230,230,1);
 
+
+.tag-box {
+  width:auto;
+  display: inline-block;
+}
+
 .top-right-nav {
   padding-top: 2px;
   text-align: right;

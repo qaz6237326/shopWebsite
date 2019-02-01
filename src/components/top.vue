@@ -13,7 +13,7 @@
         </el-col>
         <el-col :span="13">
           <div class="top-right-nav">
-            <router-link to="/login">登录</router-link>
+            <a href="http://localhost:8081">登录</a>
             <el-dropdown>
               <span class="el-dropdown-link" style="font-size: 12px;">
                   我的购购<i class="el-icon-arrow-down el-icon-right"></i>

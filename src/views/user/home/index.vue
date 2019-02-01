@@ -21,15 +21,22 @@
         </div>
       </div>
       <div class="w-1200">
-        <div class="" style="border-bottom: 2px solid #ddd;overflow:hidden;zoom:1;">
-          <div class="padding20-35" :class="$route.path == (currentPage + '/' + item.path) ? 'active-b' : ''" style="float:left;cursor: pointer;"
-               v-for="(item, index) in orderList" :key="index" @click="jump(item.path)">
-            {{item.name}}
-          </div>
-        </div>
-        <div>
-          <router-view></router-view>
-        </div>
+        <el-row class="mt20">
+          <el-col :span="3">
+            <el-tree :data="userNavData" :props="userNavProps" @node-click="chooseItem"></el-tree>
+          </el-col>
+          <el-col :span="21">
+            <div class="" style="border-bottom: 2px solid #ddd;overflow:hidden;zoom:1;">
+              <div class="padding20-35" style="float:left;cursor: pointer;" :class="$route.path == (currentPage + '/' + item.path) ? 'active-b' : ''"
+                   v-for="(item, index) in orderList" :key="index" @click="jump(item.path)">
+                {{item.name}}
+              </div>
+            </div>
+            <div>
+              <router-view></router-view>
+            </div>
+          </el-col>
+        </el-row>
       </div>
     </div>
 </template>
@@ -39,6 +46,15 @@ export default {
   name: '',
   data () {
     return {
+      userNavData: [
+        {label: '已买到的宝贝', path: '/userHome/allOrder'},
+        {label: '我的购物车'},
+        {label: '足迹'}
+      ],
+      userNavProps: {
+        children: 'children',
+        label: 'label'
+      },
       currentPage: '/userHome',
       orderList: [
         {name: '所有订单', path: 'allOrder'},
@@ -55,6 +71,14 @@ export default {
   methods: {
     jump (path) {
       this.$router.push(this.currentPage + '/' + path)
+    },
+    chooseItem (item, node, self) {
+      console.log(item)
+      console.log(node)
+      console.log(self)
+      if (item.path) {
+        this.$router.push(item.path)
+      }
     }
   },
   mounted () {

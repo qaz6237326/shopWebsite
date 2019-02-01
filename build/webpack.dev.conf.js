@@ -11,7 +11,7 @@ const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
 const HOST = process.env.HOST
-const PORT = process.env.PORT && Number(process.env.PORT)
+const PORT = 8082 || (process.env.PORT && Number(process.env.PORT))
 
 console.log("webpack.dev.conf.js")
 
@@ -80,12 +80,12 @@ module.exports = new Promise((resolve, reject) => {
       // publish the new Port, necessary for e2e tests
       process.env.PORT = port
       // add port to devServer config
-      devWebpackConfig.devServer.port = port
+      devWebpackConfig.devServer.port = PORT
 
       // Add FriendlyErrorsPlugin
       devWebpackConfig.plugins.push(new FriendlyErrorsPlugin({
         compilationSuccessInfo: {
-          messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`],
+          messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${PORT}`],
         },
         onErrors: config.dev.notifyOnErrors
         ? utils.createNotifierCallback()

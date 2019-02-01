@@ -7,6 +7,11 @@ export const routes = [
     component: Home
   },
   {
+    path: '/shop',
+    name: 'shop',
+    component: () => import('@/views/shop')
+  },
+  {
     path: '/userHome',
     name: 'userHome',
     component: () => import('@/views/user/home'),
