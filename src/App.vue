@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="min-1200">
+  <div id="app" class="b-b8">
     <div class="b-b8">
       <top></top>
     </div>
