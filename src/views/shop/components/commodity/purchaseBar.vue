@@ -1,14 +1,12 @@
 <template>
     <div>
-      <el-table>
-
-      </el-table>
+      购买栏
     </div>
 </template>
 
 <script>
 export default {
-  name: 'commodity',
+  name: '',
   data () {
     return {}
   },

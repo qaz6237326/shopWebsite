@@ -2,7 +2,7 @@
     <div class="w-1200">
       <ShopTop></ShopTop>
       <Sign></Sign>
-      <Nav></Nav>
+      <Nav :navListData="navListData"></Nav>
       <div>
         <Commodity></Commodity>
       </div>
@@ -19,7 +19,16 @@ export default {
   },
   data () {
     return {
-      imgIconUrl: imIcon
+      imgIconUrl: imIcon,
+      navListData: [
+        {text: '首页', value: 0},
+        {text: '全部商品', value: 1},
+        {text: '男鞋', value: 3},
+        {text: '女鞋', value: 4},
+        {text: '运动鞋', value: 5},
+        {text: '运动男装', value: 6},
+        {text: '运动女装', value: 7}
+      ]
     }
   },
   created () {

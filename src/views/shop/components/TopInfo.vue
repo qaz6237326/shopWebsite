@@ -1,5 +1,5 @@
 <template>
-      <el-row :gutter="5" class="c-t-nav pt10">
+      <el-row :gutter="5" class="c-t-nav ptb10">
         <el-col :span="3">
           <span>VIP购购</span>
         </el-col>
@@ -9,7 +9,7 @@
               <span>苏泊尔官方旗舰店</span>
             </div>
             <span class="tag-box" style="background: rgba(244,201,133,1);">
-            <span style="transform: scale(0.83)">
+            <span class="tagText">
               品牌直销
             </span>
           </span>
